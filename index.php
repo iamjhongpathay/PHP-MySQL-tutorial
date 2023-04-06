@@ -9,29 +9,29 @@
  echo "<br>";
  	echo 'Hi my name is ' . $name;	//single quote
  echo "<br>";
- 	echo "Hi my name is $name";		//double quote
+ 	echo "Hi my name is $name";	//double quote
 
 
  echo "<br>"; echo "<br>";
 
 
 //escape
- 	echo 'The owl makes a noise "Hoot! Hoot!"';		//single quote
+ 	echo 'The owl makes a noise "Hoot! Hoot!"';	//single quote
  echo "<br>";
- 	echo "The owl makes a noise \"Hoot! Hoot!\""; 	//double quote
+ 	echo "The owl makes a noise \"Hoot! Hoot!\"";	//double quote
 
  echo "<br>"; echo "<br>";
 
 //functions
- 	echo $name[2];				//retrieve single character
+ 	echo $name[2];	//retrieve single character
  echo "<br>";
- 	echo strlen($name);			//lenght of string
+ 	echo strlen($name);	//lenght of string
  echo "<br>";
- 	echo strtoupper($name);		//to uppercase
+ 	echo strtoupper($name);	//to uppercase
  echo "<br>";
- 	echo strtolower($name);		//to lowercase
+ 	echo strtolower($name);	//to lowercase
  echo "<br>";
- 	echo str_replace('J', 'l', $name);		//replace character
+ 	echo str_replace('J', 'l', $name);	//replace character
 
 
 
