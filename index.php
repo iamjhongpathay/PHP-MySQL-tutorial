@@ -1,40 +1,44 @@
-<?php 
+<?php
 
-//constants
- define('NAME', 'Jhong');
- define("hobbies", ["Photography", "Candle Making", "Mobile App Developing"]); //constant array
+ $stringOne = 'My email is';
+ $stringTwo = 'jeffersonpathay@gmail.com';
+ $name = 'Jhong';
 
-
-//variables
- $name = "Jhong";	//String
- $age = 26;			//Integer
- $grade = 76.50;	//Float/Double
- $isPresent = true;	//Boolean
- $favColor = array("Red","Green","Gray"); //Array
-
-
-//overriding
- // $name = "Jefferson";
-
-
- echo "Name: $name";
+//concatenate
+ 	echo $stringOne ." ". $stringTwo;
  echo "<br>";
- echo "Age: $age";
+ 	echo 'Hi my name is ' . $name;	//single quote
  echo "<br>";
- echo "Grade: $grade";
+ 	echo "Hi my name is $name";		//double quote
+
+
+ echo "<br>"; echo "<br>";
+
+
+//escape
+ 	echo 'The owl makes a noise "Hoot! Hoot!"';		//single quote
  echo "<br>";
- echo "Attendance(1/2 = Yes/No): $isPresent";
+ 	echo "The owl makes a noise \"Hoot! Hoot!\""; 	//double quote
+
+ echo "<br>"; echo "<br>";
+
+//functions
+ 	echo $name[2];				//retrieve single character
  echo "<br>";
- echo "Favorite Colors: ".$favColor[0].", ".$favColor[1].", ".$favColor[2];
+ 	echo strlen($name);			//lenght of string
+ echo "<br>";
+ 	echo strtoupper($name);		//to uppercase
+ echo "<br>";
+ 	echo strtolower($name);		//to lowercase
+ echo "<br>";
+ 	echo str_replace('J', 'l', $name);		//replace character
 
 
-/*
-Source:
-https://www.youtube.com/watch?v=2CXme275t9k&list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o&index=4
 
-https://www.w3schools.com/php/php_variables.asp
+/*Source:
+ https://www.youtube.com/watch?v=U2EliFC9NrQ&list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o&index=5
 
-https://www.w3schools.com/php/php_constants.asp
+ https://www.w3schools.com/php/php_string.asp
 */
 ?>
 
@@ -47,12 +51,5 @@ https://www.w3schools.com/php/php_constants.asp
 </head>
 <body>
 
-	<h1>User Profile Page</h1>
-
-	<div><?php echo NAME; ?></div>
-	<div><?php echo hobbies[2]; ?></div>
-
-
 </body>
 </html>
-
