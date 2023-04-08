@@ -1,72 +1,70 @@
 <?php
 
-$radius = 25;	//Integer
-$pi = 3.14;	//Float or Double
+//INDEXED arrays
+	$peopleOne = ['greg', 'leo', 'fred'];	//new way
+	echo $peopleOne[1];
 
-$numOne = 24;
-$numTwo = 54;
+echo "<br>";
 
- //operators
-	echo $numOne / $numTwo;	//Division
-echo "<br>";
-	echo $numOne * $numTwo;	//Multiplication
-echo "<br>";
-	echo $numOne + $numTwo;	//Addition
-echo "<br>";
-	echo $numOne - $numTwo;	//Subtraction
-echo "<br>";
-	echo $pi * $radius**2;	//Exponentiation (Area of the Circle)
-echo "<br>";
-	echo $numOne % $numTwo;	//Modulus
+	$peopleTwo = array('grey', 'lim');	//older way
+	echo $peopleTwo[1];
 
-
-//order of operation ( B I D M A S )
-echo "<br>"; echo "<br>";
-	echo 2 * (4 + 9) / 3;
-
-
-//increment & decrement operators
-echo "<br>"; echo "<br>";
-	echo $numOne++;	//increment 1 into next line
 echo "<br>";
-	echo $numOne;	//next line
 
-echo "<br>"; echo "<br>";
-	echo $numTwo--;	//decrement 1 into next line
+//merging the arrays
+	$allPeople = array_merge($peopleOne, $peopleTwo);
+	print_r($allPeople);
+
 echo "<br>";
-	echo $numTwo;	//next line
+
+	$ages = [20, 30, 40, 50];
+
+	$ages[1] = 25;	//overwrite value
+
+	$ages[] = 60;	//add new value in array
+
+	array_push($ages, 70);	//another way to add new value in array
+
+	print_r($ages);
+
+echo "<br>";
+
+	echo count($ages);	//total length
+
+echo "<br>";
 
 
-//shorthand operators
-$age = 20;
-echo "<br>"; echo "<br>";
-	// echo $age = $age + 10;
-//short way
-	echo $age += 10;	
-echo "<br>";
-	echo $age -= 10;
-echo "<br>";
-	echo $age *= 2;
 
+//ASSOCIATIVE array (KEY & VALUE Pairs)
+	$colorsOne = ['apple'=>'red', 'banana'=>'yellow', 'grapes'=>'purple'];	//new way
+	echo $colorsOne['banana'];
 
-//numbers function
-echo "<br>"; echo "<br>";
-	echo floor($pi);	//rounds it down to the next lowest integer
 echo "<br>";
-	echo ceil($pi);	//rounds it up to the nearest integer, if necessary
+
+	print_r($colorsOne);
+
 echo "<br>";
-	echo pi()
+
+	$colorsTwo = array('sky'=>'blue', 'leaf'=>'green');	//older way
+
+	$colorsTwo['wood'] = 'brown';	//add new value
+
+	$colorsTwo['leaf'] = 'black';	//overwrite the value using key
+	print_r($colorsTwo);
 
 
 
 /*
 Source:
 
-https://www.youtube.com/watch?v=lT2AvQ17F_w&list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o&index=6
+https://www.youtube.com/watch?v=bWygRxrlD44&list=PL4cUxeGkcC9gksOX3Kd9KPo-O68ncT05o&index=7
 
-https://www.w3schools.com/php/php_numbers.asp
+https://www.w3schools.com/php/php_arrays.asp
 
-https://www.w3schools.com/php/php_operators.asp
+https://www.w3schools.com/php/php_arrays_indexed.asp
+
+https://www.w3schools.com/php/php_arrays_associative.asp
+
 */
 ?>
 
