@@ -38,7 +38,7 @@ echo "<br>";
 
 
 //shorthand operators
-	$age = 20;
+$age = 20;
 echo "<br>"; echo "<br>";
 	// echo $age = $age + 10;
 //short way
